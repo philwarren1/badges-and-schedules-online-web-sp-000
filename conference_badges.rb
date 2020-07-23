@@ -3,8 +3,12 @@ def badge_maker(name)
   return "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(name ="Edsger, Ada, Charles, Alan, Grace, Linus, Matz")
-  return "Hello, my name is #{name}."
+def batch_badge_creator(array)
+  new_array = []
+  array.each do |name|
+    new_array.push("Hello, my name is #{name}.")
+  end
+  return new_array
 end
 
   
